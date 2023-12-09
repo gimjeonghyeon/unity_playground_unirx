@@ -117,6 +117,15 @@
     - OnDragAsObservable
     - OnEndDragAsObservable
 
+# MV(R)P 패턴
+
+---
+
+- MV(R)P 패턴이란 Unity에서 GUI 주변의 설계 패턴의 일종이다.
+- MVP패턴에서 Model의 변화를 Presenter를 통해 View에 반영
+- View의 변화를 Presenter를 통해 Model에 반영
+- 이 중개 역할에 UniRx를 사용합니다.
+
 # 참고
 
 ---
