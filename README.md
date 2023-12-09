@@ -1,7 +1,5 @@
 # UniRx란?
 
----
-
 - UniRx는 Unity에서 사용되는 Reactive Extensions (Rx) 패턴을 구현한 라이브러리이다.
 - Rx 패턴은 비동기 이벤트 및 데이터 스트림을 처리하는데 사용된다.
 - UniRx는 개발자가 이러한 패턴을 개발에 쉽게 활용할 수 있도록 만든 라이브러리가 UniRx이다.
@@ -14,8 +12,6 @@
 ```
 
 # UniRx를 사용해야하는 이유
-
----
 
 ### 비동기 작업 관리
 
@@ -35,8 +31,6 @@
 
 # UniRx 동작을 3단계로 나눈다면
 
----
-
 1. 스트림 생성
 2. 오퍼레이터를 사용하여 스트림 가공
 3. 가공된 스트림을 구독하여 사용
@@ -49,8 +43,6 @@
 ```
 
 # 주요 개념
-
----
 
 ### Observable
 
@@ -70,8 +62,6 @@
 
 # 메시지
 
----
-
 스트림에 흐르는 이벤트(스트림에 발행되는 메시지)
 
 - OnNext
@@ -87,8 +77,6 @@
 
 # 구독
 
----
-
 - 스트림은 Subcribe 된 순간에 생성된다
 - 기본적으로 Subcribe 하지 않은 스트림은 동작하지 않는다
 - Subscribe 타이밍에 의해서 결과가 바뀔 가능성이 있다
@@ -102,15 +90,11 @@
 
 # Subject
 
----
-
 - UniRx에서 제공하는 Subject<T> 를 통해 UniRx 스트림을 생성할 수 있다.
 - ISubject는 IObservable과 IObserver를 구현하고 있다.
     - subject 객체에서 OnNext(), OnComplete(), OnError() 메시지를 직접 호출할 수 있다.
 
 # 오퍼레이터
-
----
 
 - Drag 관련 속성
     - OnBeginDragAsObservable
@@ -118,8 +102,6 @@
     - OnEndDragAsObservable
 
 # MV(R)P 패턴
-
----
 
 - MV(R)P 패턴이란 Unity에서 GUI 주변의 설계 패턴의 일종이다.
 - MVP패턴에서 Model의 변화를 Presenter를 통해 View에 반영
